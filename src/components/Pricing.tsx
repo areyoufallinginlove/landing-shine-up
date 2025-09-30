@@ -6,14 +6,15 @@ const plans = [
   {
     name: "Basic",
     price: "$19.99",
-    period: "per month",
+    period: "30-day access",
     description: "Perfect for getting started",
     features: [
       "AI-powered predictions",
       "Basic arbitrage detection",
       "Match analysis tools",
+      "PnL Calendar tracking",
       "Email support",
-      "100% cashback on first loss"
+      "Loss protection features"
     ],
     paymentLink: "https://buy.stripe.com/5kA8AbcyC1TjcWk000",
     popular: false
@@ -21,15 +22,17 @@ const plans = [
   {
     name: "Pro",
     price: "$39.99",
-    period: "per month",
+    period: "30-day access",
     description: "Most popular for serious bettors",
     features: [
       "Everything in Basic",
       "Advanced AI predictions",
       "Real-time arbitrage alerts",
       "Premium match analytics",
+      "Advanced PnL Calendar",
+      "AI Match Chatbot (Coming Soon)",
       "Priority support",
-      "100% cashback on losses",
+      "Smart risk management",
       "Custom betting strategies"
     ],
     paymentLink: "https://buy.stripe.com/aEUaIZ9mq0Pf9K828b",
@@ -38,15 +41,17 @@ const plans = [
   {
     name: "Elite",
     price: "$79.99",
-    period: "per month",
+    period: "30-day access",
     description: "For professional bettors",
     features: [
       "Everything in Pro",
       "Unlimited AI predictions",
       "Instant arbitrage notifications",
-      "Advanced risk management",
+      "Advanced risk management suite",
+      "Comprehensive PnL analytics",
+      "Priority AI Chatbot access",
       "Dedicated account manager",
-      "100% cashback guarantee",
+      "Enhanced loss protection",
       "API access",
       "White-label options"
     ],
@@ -88,9 +93,9 @@ export const Pricing = () => {
                   <p className="text-muted-foreground text-sm">{plan.description}</p>
                 </div>
 
-                <div className="flex items-baseline gap-2">
+                <div className="flex flex-col gap-1">
                   <span className="text-5xl font-black text-foreground">{plan.price}</span>
-                  <span className="text-muted-foreground">/ {plan.period}</span>
+                  <span className="text-muted-foreground text-sm">{plan.period}</span>
                 </div>
 
                 <Button

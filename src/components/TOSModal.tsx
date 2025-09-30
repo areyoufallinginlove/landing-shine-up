@@ -74,29 +74,31 @@ export const TOSModal = () => {
             </section>
 
             <section>
-              <h3 className="text-lg font-bold text-foreground mb-3">5. Cashback Program</h3>
+              <h3 className="text-lg font-bold text-foreground mb-3">5. Loss Protection Program</h3>
               <p className="leading-relaxed mb-3">
-                Our 100% cashback program is subject to the following conditions:
+                Our loss protection features are designed to help manage risk:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Cashback applies to qualifying losses as defined in your subscription plan</li>
-                <li>Credits are issued to your HedgerAI account, not as direct monetary refunds</li>
-                <li>Cashback limits and eligibility vary by subscription tier</li>
-                <li>We reserve the right to modify or discontinue the cashback program with notice</li>
-                <li>Fraudulent activity will result in forfeiture of cashback eligibility</li>
+                <li>Protection applies to your first qualifying loss within the first 7 days of key activation</li>
+                <li>Credits are issued to your HedgerAI account for platform use, not as direct monetary refunds</li>
+                <li>Protection limits and eligibility vary by access tier</li>
+                <li>We reserve the right to modify or discontinue the protection program with notice</li>
+                <li>Fraudulent activity will result in forfeiture of protection eligibility</li>
+                <li>This is a platform feature benefit, not a gambling insurance product</li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-lg font-bold text-foreground mb-3">6. Subscription and Payment</h3>
+              <h3 className="text-lg font-bold text-foreground mb-3">6. Access Keys and Payment</h3>
               <p className="leading-relaxed mb-3">
-                Subscription terms include:
+                Key purchase terms include:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Subscriptions are billed monthly or annually based on your selected plan</li>
+                <li>Access keys provide 30 days of full platform access from activation date</li>
                 <li>Payment is processed through our secure payment provider, Stripe</li>
-                <li>Auto-renewal can be disabled in your account settings</li>
-                <li>Refunds are subject to our 7-day money-back guarantee for new subscribers</li>
+                <li>Keys are non-transferable and for single-user use only</li>
+                <li>No auto-renewal - you maintain full control of future purchases</li>
+                <li>Refunds are subject to our 7-day money-back guarantee for first-time purchasers</li>
                 <li>We reserve the right to modify pricing with 30 days notice</li>
               </ul>
             </section>

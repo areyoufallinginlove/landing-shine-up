@@ -1,5 +1,6 @@
-import { Target, TrendingUp, Search, Shield } from "lucide-react";
+import { Target, TrendingUp, Search, Shield, Calendar, Bot } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const features = [
   {
@@ -20,7 +21,18 @@ const features = [
   {
     icon: Shield,
     title: "Risk Management",
-    description: "100% cashback protection on losses ensures you can bet with confidence and minimize your risk."
+    description: "Smart bankroll management strategies and loss protection features help you bet responsibly and maintain profitability."
+  },
+  {
+    icon: Calendar,
+    title: "PnL Calendar",
+    description: "Track your daily, weekly, and monthly profit and loss with our comprehensive calendar view. Monitor your winning streaks and identify patterns."
+  },
+  {
+    icon: Bot,
+    title: "AI Match Chatbot",
+    description: "Ask any question about upcoming matches and get instant AI-powered insights. Deep dive into team stats, player form, and historical data.",
+    comingSoon: true
   }
 ];
 
@@ -37,14 +49,19 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(88,101,242,0.3)] group"
+              className="p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(88,101,242,0.3)] group relative"
             >
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+              {feature.comingSoon && (
+                <Badge className="absolute top-4 right-4 bg-primary/20 text-primary border-primary/50">
+                  Coming Soon
+                </Badge>
+              )}
+              <div className="flex flex-col gap-4">
+                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 w-fit">
                   <feature.icon className="h-6 w-6" />
                 </div>
                 <div className="space-y-2">
