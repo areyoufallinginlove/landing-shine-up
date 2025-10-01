@@ -32,12 +32,12 @@ export const Hero = () => {
         <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 backdrop-blur-sm">
           <Sparkles className="h-5 w-5 text-primary" />
           <span className="text-lg font-bold text-foreground">
-            Smart Loss Protection — We've Got Your Back
+            We've Got Your Back — Bet Confidently, Win Comfortably with AI Insights
           </span>
         </div>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Real-time odds. Smarter predictions with AI. Arbitrage Opportunities. Built in Safety nets. Get the unfair edge to bet confidently and profit consistently.
+          Leverage real-time data and AI-driven predictions. Discover arbitrage opportunities and built-in safety nets. Gain the edge to bet smarter, more confidently, and profit consistently.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">

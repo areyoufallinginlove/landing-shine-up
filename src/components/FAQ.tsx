@@ -27,8 +27,8 @@ const faqs = [
     answer: "We support all major sportsbooks including DraftKings, FanDuel, BetMGM, Caesars, PointsBet, and many more. Our system continuously monitors odds across 50+ platforms to find you the best opportunities."
   },
   {
-    question: "How does the 30-day access work?",
-    answer: "When you purchase a HedgerAI key, you get full access to all features for 30 days from the date of purchase. There's no auto-renewal or subscription - you simply purchase another key when you're ready to continue. This gives you full control over your investment."
+    question: "How do I access the platform after purchase?",
+    answer: "After completing your purchase, you'll instantly receive a unique access key. Simply sign up on our platform using this key, and you'll have immediate access to all features including our AI predictions, arbitrage detection, PnL tracking, and Discord community. Your dashboard will be ready to use within minutes."
   },
   {
     question: "Is this legal?",
