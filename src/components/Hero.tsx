@@ -1,7 +1,11 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TOSModal } from "./TOSModal";
 import logo from "@/assets/logo.png";
+import avatar1 from "@/assets/avatar-1.jpg";
+import avatar2 from "@/assets/avatar-2.jpg";
+import avatar3 from "@/assets/avatar-3.jpg";
+import avatar4 from "@/assets/avatar-4.jpg";
 
 export const Hero = () => {
   return (
@@ -40,28 +44,31 @@ export const Hero = () => {
           <Button
             asChild
             size="lg"
-            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-full animate-glow"
+            className="group text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-full animate-glow transition-all hover:scale-105"
           >
-            <a href="#pricing">GET STARTED</a>
+            <a href="#pricing" className="flex items-center gap-2">
+              GET STARTED
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
 
-        <div className="flex flex-col items-center gap-3 pt-8">
-          <div className="flex items-center gap-2">
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-primary/20 border-2 border-background" />
-              <div className="w-8 h-8 rounded-full bg-primary/30 border-2 border-background" />
-              <div className="w-8 h-8 rounded-full bg-primary/40 border-2 border-background" />
-              <div className="w-8 h-8 rounded-full bg-primary/50 border-2 border-background" />
+        <div className="flex flex-col items-center gap-4 pt-8">
+          <div className="flex items-center gap-3">
+            <div className="flex -space-x-3">
+              <img src={avatar1} alt="" className="w-10 h-10 rounded-full border-2 border-background object-cover" />
+              <img src={avatar2} alt="" className="w-10 h-10 rounded-full border-2 border-background object-cover" />
+              <img src={avatar3} alt="" className="w-10 h-10 rounded-full border-2 border-background object-cover" />
+              <img src={avatar4} alt="" className="w-10 h-10 rounded-full border-2 border-background object-cover" />
             </div>
             <span className="text-sm font-semibold">
-              <span className="text-primary">5,448</span> active members <span className="text-primary">making daily profits</span>
+              <span className="text-primary">300+</span> active members and counting <span className="text-primary">making daily profits</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500" />
+            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             <span className="text-sm text-muted-foreground">
-              <span className="text-foreground font-semibold">93%</span> of trial users become long-term members
+              <span className="text-foreground font-semibold">95%</span> of new users become long-term members
             </span>
           </div>
         </div>
