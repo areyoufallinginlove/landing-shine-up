@@ -13,8 +13,9 @@ const plans = [
       "Basic arbitrage detection",
       "Match analysis tools",
       "PnL Calendar tracking",
-      "Email support",
-      "Loss protection features"
+      "Smart bankroll management",
+      "Community access",
+      "Email support"
     ],
     paymentLink: "https://buy.stripe.com/5kA8AbcyC1TjcWk000",
     popular: false
@@ -30,10 +31,11 @@ const plans = [
       "Real-time arbitrage alerts",
       "Premium match analytics",
       "Advanced PnL Calendar",
+      "Real-time API analytics",
+      "Discord webhook notifications",
       "AI Match Chatbot (Coming Soon)",
-      "Priority support",
-      "Smart risk management",
-      "Custom betting strategies"
+      "Priority community support",
+      "Personalized risk management"
     ],
     paymentLink: "https://buy.stripe.com/aEUaIZ9mq0Pf9K828b",
     popular: true
@@ -46,14 +48,15 @@ const plans = [
     features: [
       "Everything in Pro",
       "Unlimited AI predictions",
-      "Instant arbitrage notifications",
+      "Instant Discord notifications",
+      "Priority real-time analytics",
       "Advanced risk management suite",
       "Comprehensive PnL analytics",
+      "VIP community access",
       "Priority AI Chatbot access",
       "Dedicated account manager",
       "Enhanced loss protection",
-      "API access",
-      "White-label options"
+      "Custom betting strategies"
     ],
     paymentLink: "https://buy.stripe.com/dR6aIZdCGdFT14A5kn",
     popular: false

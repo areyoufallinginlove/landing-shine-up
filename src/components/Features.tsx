@@ -1,4 +1,4 @@
-import { Target, TrendingUp, Search, Shield, Calendar, Bot } from "lucide-react";
+import { Target, TrendingUp, Search, Shield, Calendar, Bot, Users, BarChart3, Bell } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -21,7 +21,7 @@ const features = [
   {
     icon: Shield,
     title: "Risk Management",
-    description: "Smart bankroll management strategies and loss protection features help you bet responsibly and maintain profitability."
+    description: "Personalized bankroll strategies tailored to your funds. We calculate the optimal bet size and risk percentage for each wager, ensuring you bet smart and protect your capital."
   },
   {
     icon: Calendar,
@@ -33,6 +33,21 @@ const features = [
     title: "AI Match Chatbot",
     description: "Ask any question about upcoming matches and get instant AI-powered insights. Deep dive into team stats, player form, and historical data.",
     comingSoon: true
+  },
+  {
+    icon: Users,
+    title: "Community Support",
+    description: "Join a thriving community of like-minded bettors sharing the same goal: making consistent profits. Exchange strategies, celebrate wins, and grow together."
+  },
+  {
+    icon: BarChart3,
+    title: "Real-Time Analytics",
+    description: "Live data feeds from multiple APIs deliver up-to-the-second odds changes, market movements, and betting opportunities across all major sportsbooks."
+  },
+  {
+    icon: Bell,
+    title: "Discord Webhook Integration",
+    description: "Get instant notifications for high-confidence predictions and arbitrage opportunities directly in your Discord server. Never miss a profitable bet again."
   }
 ];
 
@@ -44,8 +59,11 @@ export const Features = () => {
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             Why Choose <span className="text-primary">HedgerAI</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Cutting-edge technology meets sports betting intelligence
+          <p className="text-2xl md:text-3xl font-bold text-foreground">
+            Your Unfair Advantage
+          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            These exact same features and tools have generated over <span className="text-primary font-semibold">$10,000+</span> through sportsbetting every single day
           </p>
         </div>
 

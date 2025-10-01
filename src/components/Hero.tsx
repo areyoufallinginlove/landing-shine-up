@@ -28,7 +28,7 @@ export const Hero = () => {
         <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 backdrop-blur-sm">
           <Sparkles className="h-5 w-5 text-primary" />
           <span className="text-lg font-bold text-foreground">
-            Risk Free Bets — Get 100% Cashback on Loss!
+            Smart Loss Protection — We've Got Your Back
           </span>
         </div>
 
@@ -44,6 +44,45 @@ export const Hero = () => {
           >
             <a href="#pricing">GET STARTED</a>
           </Button>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-12 max-w-4xl mx-auto">
+          <div className="text-center space-y-2">
+            <div className="text-3xl md:text-4xl font-black text-primary">$4.8M+</div>
+            <div className="text-sm text-muted-foreground">Net Group PnL (12 mo)</div>
+          </div>
+          <div className="text-center space-y-2">
+            <div className="text-3xl md:text-4xl font-black text-primary">+35%</div>
+            <div className="text-sm text-muted-foreground">Average EV</div>
+          </div>
+          <div className="text-center space-y-2">
+            <div className="text-3xl md:text-4xl font-black text-primary">500+</div>
+            <div className="text-sm text-muted-foreground">Reviews</div>
+          </div>
+          <div className="text-center space-y-2">
+            <div className="text-3xl md:text-4xl font-black text-primary">4.9★</div>
+            <div className="text-sm text-muted-foreground">Avg Rating</div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-3 pt-8">
+          <div className="flex items-center gap-2">
+            <div className="flex -space-x-2">
+              <div className="w-8 h-8 rounded-full bg-primary/20 border-2 border-background" />
+              <div className="w-8 h-8 rounded-full bg-primary/30 border-2 border-background" />
+              <div className="w-8 h-8 rounded-full bg-primary/40 border-2 border-background" />
+              <div className="w-8 h-8 rounded-full bg-primary/50 border-2 border-background" />
+            </div>
+            <span className="text-sm font-semibold">
+              <span className="text-primary">5,448</span> active members <span className="text-primary">making daily profits</span>
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-green-500" />
+            <span className="text-sm text-muted-foreground">
+              <span className="text-foreground font-semibold">93%</span> of trial users become long-term members
+            </span>
+          </div>
         </div>
 
         <p className="text-sm text-muted-foreground pt-8">
