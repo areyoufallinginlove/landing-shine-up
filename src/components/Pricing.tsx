@@ -23,6 +23,7 @@ const plans = [
   {
     name: "Pro",
     price: "$39.99",
+    originalPrice: "$59.99",
     period: "30-day access",
     description: "Most popular for serious bettors",
     features: [
@@ -86,7 +87,7 @@ export const Pricing = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-bold rounded-full">
-                  MOST POPULAR
+                  LIMITED TIME OFFER
                 </div>
               )}
 
@@ -97,7 +98,12 @@ export const Pricing = () => {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <span className="text-5xl font-black text-foreground">{plan.price}</span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-5xl font-black text-foreground">{plan.price}</span>
+                    {plan.originalPrice && (
+                      <span className="text-2xl font-bold text-muted-foreground line-through">{plan.originalPrice}</span>
+                    )}
+                  </div>
                   <span className="text-muted-foreground text-sm">{plan.period}</span>
                 </div>
 

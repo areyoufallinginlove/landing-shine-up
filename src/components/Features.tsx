@@ -59,9 +59,6 @@ export const Features = () => {
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             Why Choose <span className="text-primary">HedgerAI</span>?
           </h2>
-          <p className="text-2xl md:text-3xl font-bold text-foreground">
-            Your Unfair Advantage
-          </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             These exact same features and tools have generated over <span className="text-primary font-semibold">$10,000+</span> through sportsbetting every single day
           </p>

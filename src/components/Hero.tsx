@@ -33,7 +33,7 @@ export const Hero = () => {
         </div>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Unlock AI-powered odds predictions and arbitrage wins. Leverage real-time data to gain a statistical edge across sportsbooks.
+          Real-time odds. Smarter predictions with AI. Arbitrage Opportunities. Built in Safety nets. Get the unfair edge to bet confidently and profit consistently.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -44,25 +44,6 @@ export const Hero = () => {
           >
             <a href="#pricing">GET STARTED</a>
           </Button>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 pt-12 max-w-4xl mx-auto">
-          <div className="text-center space-y-2">
-            <div className="text-3xl md:text-4xl font-black text-primary">$4.8M+</div>
-            <div className="text-sm text-muted-foreground">Net Group PnL (12 mo)</div>
-          </div>
-          <div className="text-center space-y-2">
-            <div className="text-3xl md:text-4xl font-black text-primary">+35%</div>
-            <div className="text-sm text-muted-foreground">Average EV</div>
-          </div>
-          <div className="text-center space-y-2">
-            <div className="text-3xl md:text-4xl font-black text-primary">500+</div>
-            <div className="text-sm text-muted-foreground">Reviews</div>
-          </div>
-          <div className="text-center space-y-2">
-            <div className="text-3xl md:text-4xl font-black text-primary">4.9★</div>
-            <div className="text-sm text-muted-foreground">Avg Rating</div>
-          </div>
         </div>
 
         <div className="flex flex-col items-center gap-3 pt-8">
