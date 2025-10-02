@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Leverage real-time data and AI-driven predictions. Discover arbitrage opportunities and built-in safety nets. Gain the edge to bet smarter, more confidently, and profit consistently.
+          Unlock AI-powered odds predictions and arbitrage wins. Leverage real-time data to gain a statistical edge across sportsbooks.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -53,7 +53,12 @@ export const Hero = () => {
           </Button>
         </div>
 
-        <div className="flex flex-col items-center gap-4 pt-8">
+        <p className="text-sm font-bold pt-12 pb-4">
+          By using our service, you accept our{" "}
+          <TOSModal />
+        </p>
+
+        <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-3">
             <div className="flex -space-x-3">
               <img src={avatar1} alt="" className="w-10 h-10 rounded-full border-2 border-background object-cover" />
@@ -72,11 +77,6 @@ export const Hero = () => {
             </span>
           </div>
         </div>
-
-        <p className="text-sm text-muted-foreground pt-8">
-          By using our service, you accept our{" "}
-          <TOSModal />
-        </p>
       </div>
     </section>
   );

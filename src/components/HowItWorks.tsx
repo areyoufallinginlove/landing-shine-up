@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const steps = [
   {
@@ -20,10 +21,17 @@ const steps = [
 ];
 
 export const HowItWorks = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section className="py-24 px-4 bg-background/50">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16 space-y-4">
+        <div 
+          ref={ref}
+          className={`text-center mb-16 space-y-4 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             How It <span className="text-primary">Works</span>
           </h2>
@@ -35,7 +43,12 @@ export const HowItWorks = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {steps.map((step, index) => (
             <div key={index} className="flex items-center gap-6">
-              <Card className="relative p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 flex-1">
+              <Card 
+                className={`relative p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-700 flex-1 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
                 <div className="space-y-4">
                   <div className="w-14 h-14 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
                     <span className="text-2xl font-black text-primary">{step.number}</span>

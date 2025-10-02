@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const plans = [
   {
@@ -65,10 +66,17 @@ const plans = [
 ];
 
 export const Pricing = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section id="pricing" className="py-24 px-4">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16 space-y-4">
+        <div 
+          ref={ref}
+          className={`text-center mb-16 space-y-4 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             Choose Your <span className="text-primary">Plan</span>
           </h2>
@@ -81,9 +89,12 @@ export const Pricing = () => {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 ${
+              className={`relative p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-700 ${
                 plan.popular ? "border-primary shadow-[0_0_40px_rgba(88,101,242,0.4)] scale-105" : ""
+              } ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-bold rounded-full">

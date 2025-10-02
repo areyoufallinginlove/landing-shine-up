@@ -1,6 +1,7 @@
 import { Target, TrendingUp, Search, Shield, Calendar, Bot, Users, BarChart3, Bell } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const features = [
   {
@@ -52,10 +53,17 @@ const features = [
 ];
 
 export const Features = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section id="features" className="py-24 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 space-y-4">
+        <div 
+          ref={ref}
+          className={`text-center mb-16 space-y-4 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             Why Choose <span className="text-primary">HedgerAI</span>?
           </h2>
@@ -68,7 +76,10 @@ export const Features = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(88,101,242,0.3)] group relative"
+              className={`p-8 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-700 hover:shadow-[0_0_30px_rgba(88,101,242,0.3)] group relative ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               {feature.comingSoon && (
                 <Badge className="absolute top-4 right-4 bg-primary/20 text-primary border-primary/50">

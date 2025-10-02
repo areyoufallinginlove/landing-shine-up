@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const faqs = [
   {
@@ -35,20 +36,23 @@ const faqs = [
     answer: "Yes, using analytical tools and arbitrage strategies is completely legal. We provide information and analytics; all betting decisions are made by you. Please ensure sports betting is legal in your jurisdiction before using our service."
   },
   {
-    question: "What if I'm not satisfied?",
-    answer: "We offer a 7-day money-back guarantee on all key purchases. If you're not satisfied within the first week, contact our support team for a full refund, no questions asked."
-  },
-  {
     question: "What sports are covered?",
     answer: "We cover all major sports including Football (NFL, College), Basketball (NBA, NCAA), Soccer (Premier League, Champions League), Baseball (MLB), Hockey (NHL), Tennis, MMA, Boxing, and many more."
   }
 ];
 
 export const FAQ = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section id="faq" className="py-24 px-4">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16 space-y-4">
+        <div 
+          ref={ref}
+          className={`text-center mb-16 space-y-4 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-black tracking-tight">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>
@@ -62,7 +66,10 @@ export const FAQ = () => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-card/50 backdrop-blur-sm border border-border rounded-xl px-6 hover:border-primary/50 transition-all duration-300"
+              className={`bg-card/50 backdrop-blur-sm border border-border rounded-xl px-6 hover:border-primary/50 transition-all duration-700 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+              }`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary py-6">
                 {faq.question}
