@@ -12,21 +12,21 @@ export const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
   useEffect(() => {
     const timers: NodeJS.Timeout[] = [];
 
-    // Step 1: "Welcome to Hedger AI" - show at 0s, hide at 2s
+    // Step 1: "Welcome to Hedger AI" - show at 0s, hide at 2.5s
     timers.push(setTimeout(() => setStep(1), 100));
-    timers.push(setTimeout(() => setStep(2), 2000));
+    timers.push(setTimeout(() => setStep(2), 2500));
 
-    // Step 2: "We found a way to make money…" - show at 2s, hide at 4.5s
-    timers.push(setTimeout(() => setStep(3), 4500));
+    // Step 2: "We found a way to make money…" - show at 2.5s, hide at 5s
+    timers.push(setTimeout(() => setStep(3), 5000));
 
-    // Step 3: "How?" - show at 4.5s, hide at 6s
-    timers.push(setTimeout(() => setStep(4), 6000));
+    // Step 3: "How?" - show at 5s, hide at 6.5s
+    timers.push(setTimeout(() => setStep(4), 6500));
 
-    // Step 4: "AI Sports Betting & Arbitrage" - show at 6s, fade out at 8s
+    // Step 4: "AI Sports Betting & Arbitrage" - show at 6.5s, fade out at 9s
     timers.push(setTimeout(() => {
       setIsExiting(true);
       setTimeout(onComplete, 1000);
-    }, 8000));
+    }, 9000));
 
     return () => timers.forEach(timer => clearTimeout(timer));
   }, [onComplete]);
@@ -46,55 +46,75 @@ export const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
       <Button
         variant="ghost"
         onClick={handleSkip}
-        className="fixed bottom-8 right-8 text-muted-foreground hover:text-foreground transition-colors"
+        className="fixed bottom-8 right-8 text-muted-foreground hover:text-foreground transition-colors z-10"
       >
         SKIP
       </Button>
 
       {/* Text Sequence */}
-      <div className="text-center px-4">
+      <div className="relative w-full h-full flex items-center justify-center px-4">
         {/* Step 1: Welcome to Hedger AI */}
-        <h1
-          className={`text-5xl md:text-7xl font-black tracking-tight transition-opacity duration-1000 ${
-            step === 1 ? 'opacity-100' : 'opacity-0'
+        <div
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-out ${
+            step === 1 
+              ? 'opacity-100 translate-y-0' 
+              : step === 0 
+              ? 'opacity-0 translate-y-10' 
+              : 'opacity-0 -translate-y-10'
           }`}
         >
-          Welcome to{" "}
-          <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-            Hedger AI
-          </span>
-        </h1>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-center">
+            Welcome to{" "}
+            <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+              Hedger AI
+            </span>
+          </h1>
+        </div>
 
         {/* Step 2: We found a way to make money… */}
-        <h2
-          className={`text-4xl md:text-6xl font-bold tracking-tight transition-opacity duration-1000 absolute inset-0 flex items-center justify-center px-4 ${
-            step === 2 ? 'opacity-100' : 'opacity-0'
+        <div
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-out ${
+            step === 2 
+              ? 'opacity-100 translate-y-0' 
+              : step < 2 
+              ? 'opacity-0 translate-y-10' 
+              : 'opacity-0 -translate-y-10'
           }`}
         >
-          We found a{" "}
-          <span className="text-primary ml-3">smarter way</span>
-          <span className="ml-3">to make money…</span>
-        </h2>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-center max-w-5xl">
+            We found a way to make money…
+          </h2>
+        </div>
 
         {/* Step 3: How? */}
-        <h2
-          className={`text-6xl md:text-8xl font-black tracking-tight transition-opacity duration-1000 absolute inset-0 flex items-center justify-center ${
-            step === 3 ? 'opacity-100' : 'opacity-0'
+        <div
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-out ${
+            step === 3 
+              ? 'opacity-100 scale-100 translate-y-0' 
+              : step < 3 
+              ? 'opacity-0 scale-95 translate-y-10' 
+              : 'opacity-0 scale-95 -translate-y-10'
           }`}
         >
-          How?
-        </h2>
+          <h2 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight">
+            How?
+          </h2>
+        </div>
 
         {/* Step 4: AI Sports Betting & Arbitrage */}
-        <h2
-          className={`text-5xl md:text-7xl font-black tracking-tight transition-all duration-1000 absolute inset-0 flex items-center justify-center px-4 ${
-            step === 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+        <div
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-out ${
+            step === 4 
+              ? 'opacity-100 scale-100 translate-y-0' 
+              : 'opacity-0 scale-90 translate-y-10'
           }`}
         >
-          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
-            AI Sports Betting & Arbitrage
-          </span>
-        </h2>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-center px-4">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
+              AI Sports Betting & Arbitrage
+            </span>
+          </h2>
+        </div>
       </div>
 
       {/* Loading indicator at top */}
