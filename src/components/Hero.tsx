@@ -53,11 +53,6 @@ export const Hero = () => {
           </Button>
         </div>
 
-        <p className="text-sm font-bold pt-12 pb-4">
-          By using our service, you accept our{" "}
-          <TOSModal />
-        </p>
-
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-3">
             <div className="flex -space-x-3">
@@ -77,6 +72,11 @@ export const Hero = () => {
             </span>
           </div>
         </div>
+
+        <p className="text-sm font-bold pt-8">
+          By using our service, you accept our{" "}
+          <TOSModal />
+        </p>
       </div>
     </section>
   );
