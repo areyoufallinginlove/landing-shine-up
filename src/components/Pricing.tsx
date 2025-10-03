@@ -11,7 +11,7 @@ const plans = [
     description: "Perfect for getting started",
     features: [
       "AI-Powered Predictions",
-      "Arbitrage Detection",
+      "Real-time Arbitrage Scanner",
       "Match Analysis Tool",
       "PnL Analytics",
       "Bankroll & Risk Management",
@@ -29,12 +29,12 @@ const plans = [
     description: "Most popular for serious bettors",
     features: [
       "Everything in Basic",
-      "Hedgo-AI Chatbot for instant answers & analysis",
+      "Hedgo-AI Chatbot",
       "Advanced AI-Powered Predictions",
       "Real-time API Integration",
-      "Instant Discord Webhook & Email Alerts",
+      "Instant Discord & Email Alerts",
       "Priority Support",
-      "Advanced Bankroll & Risk Management",
+      "Advanced Risk Management",
       "VIP Community Access",
       "Custom Picks"
     ],
@@ -50,10 +50,10 @@ const plans = [
       "Everything in Pro",
       "Instant Arbitrage Alerts",
       "White-Label Dashboard Access",
-      "Comprehensive PnL Reports & Analytics",
+      "Comprehensive PnL Reports",
       "Dedicated Account Manager",
       "Hedgers Loss Protection Guarantee",
-      "Access to All Beta Features & Early Releases",
+      "Access to All Beta Features",
       "1-on-1 Onboarding & Training Session"
     ],
     paymentLink: "https://buy.stripe.com/dR6aIZdCGdFT14A5kn",

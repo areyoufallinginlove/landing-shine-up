@@ -20,8 +20,8 @@ export const TOSModal = () => {
           Terms of Service
         </button>
       </DialogTrigger>
-      <DialogContent className="max-w-3xl max-h-[80vh] bg-background border-border">
-        <DialogHeader>
+      <DialogContent className="max-w-3xl max-h-[80vh] bg-background border-border p-6">
+        <DialogHeader className="pr-6">
           <DialogTitle className="text-2xl font-bold">Terms of Service</DialogTitle>
           <DialogDescription>
             Please read our terms carefully before using HedgerAI
