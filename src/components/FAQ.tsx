@@ -46,6 +46,10 @@ const faqs = [
   {
     question: "How much do I need to start with?",
     answer: "We recommend starting with at least $100 in your betting bankroll. This allows you to properly implement our bankroll management strategies, which typically suggest betting 1-5% per wager. Starting with $100 gives you enough flexibility to follow multiple predictions, take advantage of arbitrage opportunities, and build your profits steadily without overexposing your capital. However, you can start with any amount you're comfortable with - just remember to adjust your bet sizes accordingly to maintain proper risk management."
+  },
+  {
+    question: "What is Affiliate Access?",
+    answer: "Affiliate Access allows you to earn 50% commission on each subscription purchased using your unique referral code. Share your code with others, and when they sign up, you'll earn ongoing commissions for each active subscription. Track your referrals, earnings, and performance all within your dashboard."
   }
 ];
 

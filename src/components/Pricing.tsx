@@ -36,7 +36,8 @@ const plans = [
       "Priority Support",
       "Advanced Risk Management",
       "VIP Community Access",
-      "Custom Picks"
+      "Custom Picks",
+      "Affiliate Access"
     ],
     paymentLink: "https://buy.stripe.com/aEUaIZ9mq0Pf9K828b",
     popular: true
