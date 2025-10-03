@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
+import { DashboardShowcase } from "@/components/DashboardShowcase";
 import { Features } from "@/components/Features";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Pricing } from "@/components/Pricing";
@@ -34,6 +35,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <DashboardShowcase />
       <Features />
       <HowItWorks />
       <Pricing />

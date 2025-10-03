@@ -38,6 +38,14 @@ const faqs = [
   {
     question: "What sports are covered?",
     answer: "We cover all major sports including Football (NFL, College), Basketball (NBA, NCAA), Soccer (Premier League, Champions League), Baseball (MLB), Hockey (NHL), Tennis, MMA, Boxing, and many more."
+  },
+  {
+    question: "What is Hedgers Loss Protection Guarantee?",
+    answer: "The Hedgers Loss Protection Guarantee is an exclusive Elite tier benefit that provides additional security for your betting journey. If you experience losses while following our AI recommendations and risk management guidelines, you'll receive platform credits to continue using HedgerAI's premium features. This protection is designed to give you confidence as you develop your betting strategy with our advanced tools."
+  },
+  {
+    question: "How much do I need to start with?",
+    answer: "We recommend starting with at least $100 in your betting bankroll. This allows you to properly implement our bankroll management strategies, which typically suggest betting 1-5% per wager. Starting with $100 gives you enough flexibility to follow multiple predictions, take advantage of arbitrage opportunities, and build your profits steadily without overexposing your capital. However, you can start with any amount you're comfortable with - just remember to adjust your bet sizes accordingly to maintain proper risk management."
   }
 ];
 

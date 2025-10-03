@@ -10,13 +10,13 @@ const plans = [
     period: "30-day access",
     description: "Perfect for getting started",
     features: [
-      "AI-powered predictions",
-      "Basic arbitrage detection",
-      "Match analysis tools",
-      "PnL tracking",
-      "Smart bankroll management",
-      "Community access",
-      "Standard support"
+      "AI-Powered Predictions",
+      "Arbitrage Detection",
+      "Match Analysis Tool",
+      "PnL Analytics",
+      "Bankroll & Risk Management",
+      "Email Support",
+      "Community Access"
     ],
     paymentLink: "https://buy.stripe.com/5kA8AbcyC1TjcWk000",
     popular: false
@@ -29,15 +29,14 @@ const plans = [
     description: "Most popular for serious bettors",
     features: [
       "Everything in Basic",
-      "Advanced AI predictions",
-      "Real-time arbitrage alerts",
-      "Premium match analytics",
-      "Enhanced PnL analytics",
-      "Real-time API integration",
-      "Discord webhook notifications",
-      "AI Match Chatbot (Coming Soon)",
-      "Priority support",
-      "Advanced risk management"
+      "Hedgo-AI Chatbot for instant answers & analysis",
+      "Advanced AI-Powered Predictions",
+      "Real-time API Integration",
+      "Instant Discord Webhook & Email Alerts",
+      "Priority Support",
+      "Advanced Bankroll & Risk Management",
+      "VIP Community Access",
+      "Custom Picks"
     ],
     paymentLink: "https://buy.stripe.com/aEUaIZ9mq0Pf9K828b",
     popular: true
@@ -49,16 +48,13 @@ const plans = [
     description: "For professional bettors",
     features: [
       "Everything in Pro",
-      "Unlimited AI predictions",
-      "Instant arbitrage alerts",
-      "White-label dashboard access",
-      "Professional risk management",
-      "Comprehensive PnL reports",
-      "VIP community channel",
-      "Priority AI Chatbot access",
-      "Dedicated account manager",
-      "Premium loss protection",
-      "Custom betting strategies"
+      "Instant Arbitrage Alerts",
+      "White-Label Dashboard Access",
+      "Comprehensive PnL Reports & Analytics",
+      "Dedicated Account Manager",
+      "Hedgers Loss Protection Guarantee",
+      "Access to All Beta Features & Early Releases",
+      "1-on-1 Onboarding & Training Session"
     ],
     paymentLink: "https://buy.stripe.com/dR6aIZdCGdFT14A5kn",
     popular: false

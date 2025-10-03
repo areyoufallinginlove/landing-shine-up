@@ -189,8 +189,8 @@ export const TOSModal = () => {
             </section>
           </div>
         </ScrollArea>
-        <div className="flex justify-end pt-4 border-t border-border">
-          <Button onClick={() => setOpen(false)} variant="default">
+        <div className="flex justify-end pt-4 border-t border-border mt-4">
+          <Button onClick={() => setOpen(false)} className="w-full sm:w-auto">
             I Understand
           </Button>
         </div>
